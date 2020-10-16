@@ -4,10 +4,10 @@
 
 import requests
 import json
+import os
 
 if __name__ == '__main__':
-
-    wekbook_url = 'https://hooks.slack.com/services/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'
+    wekbook_url = os.environ['SLACK_WEBHOOK_URL']
 
     data = {
         'text': '> Test Python',
