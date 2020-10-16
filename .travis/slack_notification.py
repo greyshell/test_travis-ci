@@ -7,7 +7,7 @@ import json
 
 if __name__ == '__main__':
 
-    wekbook_url = 'https://hooks.slack.com/services/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'
+    wekbook_url = 'https://hooks.slack.com/services/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'
 
     data = {
         'text': 'logged-In: asinha',
