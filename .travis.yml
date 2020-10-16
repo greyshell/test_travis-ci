@@ -2,8 +2,13 @@ language: c
 sudo: required
 before_install:
 - sudo apt-get update
+- sudo apt install software-properties-common
+- sudo add-apt-repository ppa:deadsnakes/ppa
+- sudo apt update
+- sudo apt install python3.8
 script:
-- echo 'running script'
+- python3 --version
+- python3 .travis/slack_notification.py
 after_script:
 - echo 'running after_script'
 notifications:
