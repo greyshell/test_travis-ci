@@ -7,11 +7,11 @@ import json
 
 if __name__ == '__main__':
 
-    wekbook_url = 'https://hooks.slack.com/services/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'
+    wekbook_url = 'https://hooks.slack.com/services/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'
 
     data = {
-        'text': 'logged-In: asinha',
-        'username': 'awae-bot',
+        'text': '> Test Python',
+        'username': 'bot',
     }
 
     response = requests.post(wekbook_url, data=json.dumps(
